@@ -14,7 +14,15 @@
                             </div>
                         @endif
 
+
+
                         Hello Admin!
+                        <ul>
+                            <li>Name : {{ Auth::user()->name }}</li>
+                            <li>Email : {{ Auth::user()->email }}</li>
+                            <li>Role : {{ Auth::user()->type }}</li>
+                            <li>Created at : {{ Auth::user()->created_at }}</li>
+                        </ul>
                     </div>
                 </div>
             </div>
